@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+    background-color: #FFEBCD;
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60px 60px auto;
+    grid-template-rows: 80px 200px 200px 200px 60px ;
+    grid-template-areas: "hd hd hd"
+                         "main main main"
+                         "main main main"
+                         "main main main"
+                         "footer footer footer";
+}
+
+main{
+     padding: 16px;
+     text-align: center;
+     margin-top: 10vh;
+     grid-area: main;
+}
+
+header {
+    background: #DC143C;
+    grid-area: hd;
+    margin-bottom: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+footer {
+    background: black;
+    grid-area: footer;
+    padding: 16px;
+    text-align: center;
+    font-display: block;
+    margin-top: 100vh;
+}
+
+.navigation-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    float: left;
+    font-family:  Georgia, serif;
+}
+
+.navigation-list1 {
+    list-style: none;
+    margin: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    float: right;
+}
+
+.footer-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+
+}
+
+.navigation-item {
+    margin: 0 10px;
+
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+.navigation-item1 a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    float: right;
+}
+
+.navigation-item a:hover,
+.navigation-item a:active {
+    color: #FFB6C1;
+}
+.navigation-item1 a:hover,
+.navigation-item1 a:active {
+    color: #FFB6C1;
+}
+.footer-item a{
+   margin: 0 10px;
+   color: white;
+   text-decoration: none;
+}
+.footer-item a:hover,
+.footer-item a:active{
+     color: #FFB6C1;
+}
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#9370DB;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #9370DB}
+
+.button:active {
+  background-color: #9370DB;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
